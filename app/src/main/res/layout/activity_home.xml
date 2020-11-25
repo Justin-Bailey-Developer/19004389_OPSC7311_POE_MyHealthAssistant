@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#83AAE5"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTodayHeader"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        app:cardBackgroundColor="#83AAE5">
+
+        <TextView
+            android:id="@+id/tvToday"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/mandali"
+            android:gravity="center"
+            android:text="TODAY"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/ivHamburger"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/hamburger_icon" />
+
+        <ImageView
+            android:id="@+id/ivCog"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/cog_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/svInfo"
+        android:layout_width="match_parent"
+        android:layout_height="656dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSteps"
+                android:layout_width="378dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#B8B8B8">
+
+                <TextView
+                    android:id="@+id/tvSteps"
+                    android:layout_width="133dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/mandali"
+                    android:gravity="center"
+                    android:text="Steps"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvStepCount"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/mandali"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvStepGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/mandali"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ProgressBar
+                    android:id="@+id/pbSteps"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="217dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_margin="20dp"
+                    android:scaleY="3" />
+
+                <TextView
+                android:id="@+id/tvStepDeficit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="80dp"
+                android:fontFamily="@font/mandali"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvActivity"
+                android:layout_width="378dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#B8B8B8">
+
+                <TextView
+                    android:id="@+id/tvActivity"
+                    android:layout_width="127dp"
+                    android:layout_height="99dp"
+                    android:fontFamily="@font/mandali"
+                    android:gravity="center"
+                    android:text="Activity"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/ivActivity"
+                    android:layout_width="248dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    app:srcCompat="@drawable/running_big_icon" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFood"
+                android:layout_width="378dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#B8B8B8">
+
+                <TextView
+                    android:id="@+id/tvFood"
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/mandali"
+                    android:gravity="center"
+                    android:text="Food"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvCalorieIntake"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/mandali"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvCalorieGoal"
+                    android:layout_width="57dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/mandali"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ProgressBar
+                    android:id="@+id/pbCalorieIntake"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="217dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_margin="20dp"
+                    android:scaleY="3" />
+
+                <TextView
+                    android:id="@+id/tvCalorieDeficit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="80dp"
+                    android:fontFamily="@font/mandali"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvWeight"
+                android:layout_width="378dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#B8B8B8">
+
+                <TextView
+                    android:id="@+id/tvWeight"
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/mandali"
+                    android:gravity="center"
+                    android:text="Weight"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvStartingWeightValue"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/mandali"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvCurrentWeightValue"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/mandali"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvWeightGoal"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/mandali"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ProgressBar
+                    android:id="@+id/pbWeight"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="217dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_margin="20dp"
+                    android:scaleY="3" />
+
+                <TextView
+                    android:id="@+id/tvWeightDeficit"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="80dp"
+                    android:fontFamily="@font/mandali"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

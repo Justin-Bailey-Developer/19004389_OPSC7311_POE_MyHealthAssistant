@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyHealthAssistant</string>
+
+    <string-array name="options">
+        <item>Steps</item>
+        <item>Heart Rate</item>
+        <item>Food</item>
+        <item>Water</item>
+        <item>Weight</item>
+    </string-array>
+</resources>

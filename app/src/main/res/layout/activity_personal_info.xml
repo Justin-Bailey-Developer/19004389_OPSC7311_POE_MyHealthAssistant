@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#83AAE5"
+    android:orientation="vertical"
+    tools:context=".PersonalInfoActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPersonalInfoHeader"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        app:cardBackgroundColor="#83AAE5">
+
+        <TextView
+            android:id="@+id/tvPersonalInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/mandali"
+            android:gravity="center"
+            android:text="PERSONAL INFO"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/svInfo"
+        android:layout_width="match_parent"
+        android:layout_height="639dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvName"
+                android:layout_width="378dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#B8B8B8">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="126dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/mandali"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvNameData"
+                    android:layout_width="244dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    app:cardBackgroundColor="#B8B8B8">
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSteps"
+                android:layout_width="378dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#B8B8B8">
+
+                <TextView
+                    android:id="@+id/tvSteps"
+                    android:layout_width="126dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/mandali"
+                    android:gravity="center"
+                    android:text="Birthday"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvStepsData"
+                    android:layout_width="244dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    app:cardBackgroundColor="#B8B8B8">
+
+
+                    <DatePicker
+                        android:id="@+id/dpBirthday"
+                        android:layout_width="260dp"
+                        android:layout_height="107dp"
+                        android:calendarViewShown="false"
+                        android:datePickerMode="spinner"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvGender"
+                android:layout_width="378dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#B8B8B8">
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/mandali"
+                    android:gravity="center"
+                    android:text="Gender"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="30dp">
+
+                    <RadioButton
+                        android:id="@+id/rbtnMale"
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:text="Male"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtnFemale"
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="Female"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </RadioGroup>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHeight"
+                android:layout_width="378dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#B8B8B8">
+
+                <TextView
+                    android:id="@+id/tvHeight"
+                    android:layout_width="126dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/mandali"
+                    android:gravity="center"
+                    android:text="Height"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvHeightData"
+                    android:layout_width="244dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    app:cardBackgroundColor="#B8B8B8">
+
+                    <EditText
+                        android:id="@+id/etHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnSavePersonalInfo"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
+                android:background="#B8B8B8"
+                android:text="SAVE"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

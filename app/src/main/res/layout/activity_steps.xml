@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#83AAE5"
+    android:orientation="vertical"
+    tools:context=".StepsActivity">
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cvStepsHeader"
+      android:layout_width="match_parent"
+      android:layout_height="62dp"
+      app:cardBackgroundColor="#83AAE5">
+
+    <TextView
+        android:id="@+id/tvStepsHeader"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/mandali"
+        android:gravity="center"
+        android:text="STEPS"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+  </androidx.cardview.widget.CardView>
+
+  <ScrollView
+      android:id="@+id/svInfo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cvStepsProgress"
+          android:layout_width="378dp"
+          android:layout_height="164dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_margin="20dp"
+          app:cardBackgroundColor="#B8B8B8">
+
+        <TextView
+            android:id="@+id/tvStepsProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mandali"
+            android:gravity="center"
+            android:text="Today's Progress"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvStepCountValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="@font/mandali"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvStepGoalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/mandali"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/pbSteps2"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="50dp"
+            android:scaleY="3" />
+
+        <TextView
+            android:id="@+id/tvStepDeficitValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/mandali"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cvUpdateSteps"
+          android:layout_width="378dp"
+          android:layout_height="164dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_margin="20dp"
+          app:cardBackgroundColor="#B8B8B8">
+
+        <TextView
+            android:id="@+id/tvUpdateSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mandali"
+            android:gravity="center"
+            android:text="Update Steps"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etUpdateSteps"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:ems="10"
+            android:fontFamily="@font/mandali"
+            android:hint="Increase by"
+            android:inputType="number"
+            android:textColor="#000000" />
+
+      </androidx.cardview.widget.CardView>
+
+
+
+      <Button
+          android:id="@+id/btnUpdateSteps"
+          android:layout_width="120dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right"
+          android:layout_margin="20dp"
+          android:background="#B8B8B8"
+          android:text="UPDATE"
+          android:textColor="#000000"
+          android:textSize="24sp" />
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cvStepsHistory"
+          android:layout_width="378dp"
+          android:layout_height="300dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_margin="20dp"
+          app:cardBackgroundColor="#B8B8B8">
+
+          <TextView
+          android:id="@+id/tvStepsHistory"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/mandali"
+          android:gravity="center"
+          android:text="Daily Steps History"
+          android:textColor="#000000"
+          android:textSize="24sp" />
+
+        <ListView
+            android:id="@+id/lvStepsHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp" />
+
+      </androidx.cardview.widget.CardView>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

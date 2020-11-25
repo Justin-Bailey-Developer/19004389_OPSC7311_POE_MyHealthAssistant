@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#83AAE5"
+    android:orientation="vertical"
+    tools:context=".OptionsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvOptionsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        app:cardBackgroundColor="#83AAE5">
+
+        <TextView
+            android:id="@+id/tvOptions"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/mandali"
+            android:gravity="center"
+            android:text="OPTIONS"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPersonalInfo"
+        android:layout_width="378dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#B8B8B8">
+
+        <TextView
+            android:id="@+id/tvPersonalInfo"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/mandali"
+            android:gravity="center"
+            android:text="Personal Info"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/ivPersonalInfoArrow"
+            android:layout_width="86dp"
+            android:layout_height="68dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/arrow_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvGoals"
+        android:layout_width="378dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#B8B8B8" >
+
+        <TextView
+            android:id="@+id/tvGoals"
+            android:layout_width="183dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/mandali"
+            android:gravity="center"
+            android:text="Goals"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/ivGoalsArrow"
+            android:layout_width="86dp"
+            android:layout_height="68dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/arrow_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
